@@ -1,5 +1,9 @@
 FROM node:16
 
+RUN apt-get update
+RUN apt-get upgrade
+RUN apt-get install -y build-essential
+
 # Create app directory
 WORKDIR /usr/src/app
 
